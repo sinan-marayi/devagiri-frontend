@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem('token_id', res.token);
         localStorage.setItem('user_id', res.user.id);
         localStorage.setItem('isAdmin', res.isAdmin);
-        this.router.navigate(['/']);
+        this.router.navigate(['/dashboard-worker']);
       } else {
         this.msg = 'sorry...unable to login';
       }

@@ -1,7 +1,27 @@
-<form action="" (ngSubmit)="loginClicked()">
-<label for="">username</label>
-<input name="email" [(ngModel)]="email" type="text">
-<label>password</label>
-<input type="password" name="password" [(ngModel)]="password">
-<button>Submit</button>
-</form>
+<app-navbar></app-navbar>
+<div class="w-screen h-screen flex">
+  <div class="w-1/2"></div>
+  <div class="w-1/2 flex justify-center items-center">
+    <form class="flex flex-col p-20 " action="" (ngSubmit)="loginClicked()">
+      <div class="flex flex-col gap-2">
+        <label for="">username</label>
+        <input
+          class="border border-b-black"
+          name="email"
+          [(ngModel)]="email"
+          type="text"
+        />
+      </div>
+      <div class="flex flex-col gap-2">
+        <label>password</label>
+        <input
+          class="border border-b-black"
+          type="password"
+          name="password"
+          [(ngModel)]="password"
+        />
+      </div>
+      <button class="border bg-blue-300 rounded-3xl">Submit</button>
+    </form>
+  </div>
+</div>

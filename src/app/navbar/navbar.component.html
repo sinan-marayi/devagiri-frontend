@@ -1,5 +1,5 @@
 <!-- navbar -->
-<nav class="relative container mx-auto p-6 ">
+<nav class="relative container mx-auto p-6">
   <!-- flex container -->
   <div class="flex justify-between items-center">
     <!-- logo -->
@@ -13,15 +13,30 @@
       <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
       <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
       <a href="#" class="hover:text-darkGrayishBlue">Community</a>
-      <a href="#" class="hover:text-darkGrayishBlue">Become a worker</a>
     </div>
-    <div class="pt-2 flex ">
+    <div class="pt-2 flex">
       <!-- button -->
-<a href="" class="pr-8">become a Worker</a>
+
+
       <a
+*ngIf="auth.isLogin()"
+(click)="logout()"
+        class="hidden md:block p-2 px-6 pt3 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+        >Become  a worker</a
+      >
+      <a
+      *ngIf="!auth.isLogin()"
+
+        routerLink="/register"
+        class="hidden md:block p-2 px-6 pt3 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+        >Become  a worker</a
+      >
+      <a
+      *ngIf="!auth.isLogin()"
+
         routerLink="/login"
         class="hidden md:block p-2 px-6 pt3 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
-        >LOGIN</a
+        >Login as Worker</a
       >
     </div>
     <!-- hamburger icon  -->
