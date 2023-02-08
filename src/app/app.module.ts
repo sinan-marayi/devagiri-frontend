@@ -18,6 +18,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 
+import { FooterComponent } from './components/footer/footer.component';
+import { UserdashboardComponent } from './dashboard/userdashboard/userdashboard.component';
+import { WorkerDashboardComponent } from './dashboard/worker-dashboard/worker-dashboard.component';
+import { RequestsComponent } from './dashboard/workerDashboard/requests/requests.component';
+import { PdpViewComponent } from './pdp-view/pdp-view.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +37,12 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     SettingsComponent,
     DashboardComponent,
     CategoriesComponent,
-    SearchFilterPageComponent
+    SearchFilterPageComponent,
+    FooterComponent,
+    UserdashboardComponent,
+    WorkerDashboardComponent,
+    RequestsComponent,
+    PdpViewComponent,
   ],
   imports: [
     BrowserModule,
