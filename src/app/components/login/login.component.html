@@ -1,1 +1,7 @@
-<p>login works!</p>
+<form action="" (ngSubmit)="loginClicked()">
+<label for="">username</label>
+<input name="email" [(ngModel)]="email" type="text">
+<label>password</label>
+<input type="password" name="password" [(ngModel)]="password">
+<button>Submit</button>
+</form>

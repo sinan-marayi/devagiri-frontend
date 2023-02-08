@@ -11,11 +11,13 @@ import { ProfileCreationComponent } from './components/profile-creation/profile-
 import { WorkerListingComponent } from './dashboard/userDashboard/worker-listing/worker-listing.component';
 import { HistoryComponent } from './dashboard/userDashboard/history/history.component';
 import { SettingsComponent } from './dashboard/userDashboard/settings/settings.component';
-import { WorkerDashboardComponent } from './dashboard/worker-dashboard/worker-dashboard.component';
 import { DashboardComponent } from './dashboard/workerDashboard/dashboard/dashboard.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { SearchFilterPageComponent } from './search-filter-page/search-filter-page.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -28,15 +30,15 @@ import { SearchFilterPageComponent } from './search-filter-page/search-filter-pa
     WorkerListingComponent,
     HistoryComponent,
     SettingsComponent,
-    WorkerDashboardComponent,
     DashboardComponent,
-    LandingPageComponent,
     CategoriesComponent,
     SearchFilterPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
