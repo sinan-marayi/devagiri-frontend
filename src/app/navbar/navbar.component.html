@@ -8,32 +8,18 @@
     </div>
     <!-- nav items -->
     <div class="hidden md:flex space-x-6">
-      <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
-      <a href="#" class="hover:text-darkGrayishBlue">Product</a>
-      <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
-      <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
-      <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+
     </div>
-    <div class="pt-2 flex">
+    <div class="pt-2 flex gap-4">
       <!-- button -->
-
-
       <a
-*ngIf="auth.isLogin()"
-(click)="logout()"
-        class="hidden md:block p-2 px-6 pt3 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
-        >Become  a worker</a
-      >
-      <a
-      *ngIf="!auth.isLogin()"
-
+        *ngIf="auth.isLogin()"
         routerLink="/register"
         class="hidden md:block p-2 px-6 pt3 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
-        >Become  a worker</a
+        >Become a worker</a
       >
       <a
-      *ngIf="!auth.isLogin()"
-
+        *ngIf="auth.isLogin()"
         routerLink="/login"
         class="hidden md:block p-2 px-6 pt3 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
         >Login as Worker</a
