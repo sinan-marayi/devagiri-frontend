@@ -16,7 +16,7 @@ const routes: Routes = [{path:'',component:HomeComponent},
   {path:'pdpView',component:PdpViewComponent},
   {path:'dashboard-worker',component:WorkerDashboardComponent,
   children:[
-    {path:'dashboard',component:DashboardComponent},
+    {path:'',component:DashboardComponent},
     {path:'requests',component:RequestsComponent},
     {path:'history',component:HistoryComponent},
     {path:'settings',component:SettingsComponent},
