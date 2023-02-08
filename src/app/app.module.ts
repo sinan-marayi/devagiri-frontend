@@ -11,11 +11,14 @@ import { ProfileCreationComponent } from './components/profile-creation/profile-
 import { WorkerListingComponent } from './dashboard/userDashboard/worker-listing/worker-listing.component';
 import { HistoryComponent } from './dashboard/userDashboard/history/history.component';
 import { SettingsComponent } from './dashboard/userDashboard/settings/settings.component';
-import { WorkerDashboardComponent } from './dashboard/worker-dashboard/worker-dashboard.component';
 import { DashboardComponent } from './dashboard/workerDashboard/dashboard/dashboard.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { SearchFilterPageComponent } from './search-filter-page/search-filter-page.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { UserdashboardComponent } from './dashboard/userdashboard/userdashboard.component';
+import { WorkerDashboardComponent } from './dashboard/worker-dashboard/worker-dashboard.component';
+import { RequestsComponent } from './dashboard/workerDashboard/requests/requests.component';
+import { PdpViewComponent } from './pdp-view/pdp-view.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +31,14 @@ import { SearchFilterPageComponent } from './search-filter-page/search-filter-pa
     WorkerListingComponent,
     HistoryComponent,
     SettingsComponent,
-    WorkerDashboardComponent,
     DashboardComponent,
-    LandingPageComponent,
     CategoriesComponent,
-    SearchFilterPageComponent
+    SearchFilterPageComponent,
+    FooterComponent,
+    UserdashboardComponent,
+    WorkerDashboardComponent,
+    RequestsComponent,
+    PdpViewComponent,
   ],
   imports: [
     BrowserModule,
