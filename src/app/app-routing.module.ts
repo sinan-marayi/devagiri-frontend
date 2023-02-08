@@ -9,11 +9,13 @@ import { RequestsComponent } from './dashboard/workerDashboard/requests/requests
 import { SettingsComponent } from './dashboard/workerDashboard/settings/settings.component';
 import { HomeComponent } from './home/home.component';
 import { PdpViewComponent } from './pdp-view/pdp-view.component';
+import { SearchFilterPageComponent } from './search-filter-page/search-filter-page.component';
 
 const routes: Routes = [{path:'',component:HomeComponent},
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
   {path:'pdpView',component:PdpViewComponent},
+  {path:'searchPage',component:SearchFilterPageComponent},
   {path:'dashboard-worker',component:WorkerDashboardComponent,
   children:[
     {path:'',component:DashboardComponent},
