@@ -1,21 +1,83 @@
-<div>
+<div class="w-screen p-8 flex justify-center items-center flex-col">
+  <h1 class="text-3xl">REGISTER AS WORKER</h1>
+  <form action="" (ngSubmit)="registerWorker()">
+    <div class="flex flex-col text-lg">
+      <label for="">Name</label>
 
-<form action="" >
-<label for="">Name</label>
-<input type="text"  name="name" [(ngModel)]="name">
-<label for="">email</label>
-<input type="text"  name="email" [(ngModel)]="email">
-<label for="">Phone Number</label>
-<input type="text" name="phone" [(ngModel)]="phone">
-<label for="">Work</label>
-<input type="text" name="work" [(ngModel)]="work">
-<label for="">Experience</label>
-<input type="text" name="experience" [(ngModel)]="experience">
-<label for="">Location</label>
-<input type="text" name="location" [(ngModel)]="location">
-<label for="">password</label>
-<input type="password" name="password [(ngModel)]="password>
-
-<button>Register</button>
-</form>
+      <input
+        class="border-b-2 border-black"
+        type="text"
+        name="name"
+        [(ngModel)]="name"
+      />
+    </div>
+    <div class="flex flex-col text-lg">
+      <label for="">email</label>
+      <input
+        class="border-b-2 border-black"
+        type="text"
+        name="email"
+        [(ngModel)]="email"
+      />
+    </div>
+    <div class="flex flex-col text-lg">
+      <label for="">Phone Number</label>
+      <input
+        class="border-b-2 border-black"
+        type="text"
+        name="phone"
+        [(ngModel)]="phone"
+      />
+    </div>
+    <div class="flex flex-col text-lg">
+      <label for="">Work</label>
+      <input
+        class="border-b-2 border-black"
+        type="text"
+        name="work"
+        [(ngModel)]="work"
+      />
+    </div>
+    <div class="flex flex-col text-lg">
+      <label for="">Experience</label>
+      <input
+        class="border-b-2 border-black"
+        type="text"
+        name="experience"
+        [(ngModel)]="experience"
+      />
+    </div>
+    <div class="flex flex-col text-lg">
+      <label for="">Location</label>
+      <input
+        class="border-b-2 border-black"
+        type="text"
+        name="location"
+        [(ngModel)]="location"
+      />
+    </div>
+    <div class="flex flex-col text-lg">
+      <label for="">password</label>
+      <input
+        class="border-b-2 border-black"
+        type="password"
+        name="password"
+        [(ngModel)]="password"
+      />
+    </div>
+    <div class="flex flex-col text-lg">
+      <label for="">about</label>
+      <input
+        class="border-b-2 border-black"
+        type="text"
+        name="about"
+        [(ngModel)]="about"
+      />
+    </div>
+    <div>
+      <button class="border text-center text-white bg-blue-700 p-2">
+        Register
+      </button>
+    </div>
+  </form>
 </div>

@@ -11,4 +11,7 @@ export class AuthService {
   login(user: any) {
     return this.http.post<any>('http://localhost:3000/users/login', user);
   }
+  register(user: any) {
+    return this.http.post<any>('http://localhost:3000/admin/registerWorker', user);
+  }
 }
