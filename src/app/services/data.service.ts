@@ -11,4 +11,8 @@ export class DataService {
   getProfile(id: any) {
     return this.http.post<any>('http://localhost:3000/admin/getProfile', id);
   }
+  getWorkers(){
+    return this.http.get<any>('http://localhost:3000/admin/getWorkers');
+
+  }
 }

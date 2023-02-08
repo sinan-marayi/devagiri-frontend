@@ -14,7 +14,7 @@ import { SearchFilterPageComponent } from './search-filter-page/search-filter-pa
 const routes: Routes = [{path:'',component:HomeComponent},
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
-  {path:'pdpView',component:PdpViewComponent},
+  {path:'pdpView/:id',component:PdpViewComponent},
   {path:'searchPage',component:SearchFilterPageComponent},
   {path:'dashboard-worker',component:WorkerDashboardComponent,
   children:[

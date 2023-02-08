@@ -6,7 +6,7 @@
             <div class="flex      mb-4">
                 <img class="profile border-4 rounded-full h-64 w-64" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Wzw-FFKH-k2mEt1AiVz7QwYCZWu55pyBuv1X2AGuokRGEQjirZN5vua7nRvUxYURDZU&usqp=CAU">
             </div>
-            <h2 class="flex text-2xl  justify-center font-medium ">sinan</h2>
+            <h2 class="flex text-2xl  justify-center font-medium ">{{profile.name}}</h2>
         </div>
 
 
@@ -20,17 +20,17 @@
             <button class=" rounded-md py-2 text-white px-5 mt-2 font-medium bg-pink-600">
                 Send Request
              </button>
-           
+
         </div>
 
 
         <div class="flex flex-col items-center  border-t">
             <div class=" mt-4">
                 <span class="text-xs font-extralight">
-                    Space required
+                    Profession
                 </span>
                 <h3 class="text-xl font-medium">
-                    Private room
+{{profile.work}}
                 </h3>
             </div>
             <div class=" items-center  justify-center">
@@ -38,7 +38,7 @@
                     Preferred Location
                 </span>
                 <h3 class="text-xl font-medium">
-                    Kelana Jaya, Petaling Jaya
+{{profile.location}}
                 </h3>
             </div>
         </div>
@@ -62,7 +62,7 @@
                     <span class="text-base">Nationality</span>
                     <span class="text-base">India</span>
                 </div>
-               
+
             </div>
         </div>
         <div class="flex flex-col items-center order-t w-[80%]">
