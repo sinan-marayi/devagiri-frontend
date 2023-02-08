@@ -1,0 +1,45 @@
+<!-- navbar -->
+<nav class="relative container mx-auto p-6">
+  <!-- flex container -->
+  <div class="flex justify-between items-center">
+    <!-- logo -->
+    <div class="pt-2">
+      <img src="./img/logo.svg" alt="" />
+    </div>
+    <!-- nav items -->
+    <div class="hidden md:flex space-x-6">
+      <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+      <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+      <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+      <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+      <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+    </div>
+    <div class="pt-2">
+      <!-- button -->
+      <a
+        href="#"
+        class="hidden md:block p-2 px-6 pt3 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+        >Get Started</a
+      >
+    </div>
+    <!-- hamburger icon  -->
+    <button id="menu-btn" class="block hamburger md:hidden md:outline-none">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+  </div>
+  <!-- mobile menu -->
+  <div class="md:hidden">
+    <div
+      id="menu"
+      class="absolute hidden flex-col items-center font-bold space-y-4 self-end py-8 bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md mt-10"
+    >
+      <a href="#">Pricing</a>
+      <a href="#">Product</a>
+      <a href="#">About us</a>
+      <a href="#">Careers</a>
+      <a href="#">Community</a>
+    </div>
+  </div>
+</nav>
